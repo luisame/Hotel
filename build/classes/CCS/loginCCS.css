@@ -1,0 +1,46 @@
+/* Estilo para la ventana del login */
+.login-window {
+-fx-background-color: white;
+-fx-background-radius: 10px;
+}
+#gridpane {
+    -fx-background-color: #f3f3f4;
+    -fx-padding: 25;
+    -fx-alignment: center;
+}
+
+#heading {
+    -fx-font-size: 28px;
+    -fx-text-fill: #444444;
+    -fx-padding: 0 0 25 0;
+}
+
+#username-label, #password-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #444444;
+}
+
+#username-field, #password-field {
+    -fx-font-size: 16px;
+    -fx-prompt-text-fill: #777777;
+    -fx-border-color: #dddddd;
+    -fx-border-radius: 3;
+    -fx-padding: 5 10;
+}
+
+#login-button {
+    -fx-font-size: 16px;
+    -fx-background-color: #0078d7;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 3;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+
+#login-button:hover {
+    -fx-background-color: #0066b3;
+}
+
+#login-button:pressed {
+    -fx-background-color: #005299;
+}

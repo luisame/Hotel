@@ -1,0 +1,69 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Vista de la pantalla de Habitaciones -->
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER.Habitaciones" stylesheets="@CCS/HabitacionesCCS.css" styleClass="contenedor-principal" style="-fx-padding: 40px;">
+    <TabPane AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <Tab text="Consultar">
+            <TableView fx:id="tablaHabitaciones">
+                <columns>
+                    <TableColumn fx:id="idHabitacionColumna" text="ID Habitación" />
+                    <TableColumn fx:id="numeroHabitacionColumna" text="Número de Habitación" />
+                    <TableColumn fx:id="tipoHabitacionColumna" text="Tipo de Habitación" />
+                    <TableColumn fx:id="descripcionColumna" text="Descripción" />
+                    <TableColumn fx:id="capacidadColumna" text="Capacidad" />
+                    <TableColumn fx:id="estadoColumna" text="Estado" />
+                </columns>
+            </TableView>
+        </Tab>
+        <Tab text="Modificar">
+            <GridPane>
+                <Label text="ID Habitación" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <TextField fx:id="idHabitacionInputModificar" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                <Label text="Número de Habitación" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="numeroHabitacionInputModificar" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Label text="Tipo de Habitación" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <TextField fx:id="tipoHabitacionInputModificar" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label text="Descripción" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <TextField fx:id="descripcionInputModificar" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                <Label text="Capacidad" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <TextField fx:id="capacidadInputModificar" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+                <Label text="Estado" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                <TextField fx:id="estadoInputModificar" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+                <Button text="Modificar" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <Button text="Eliminar" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            </GridPane>
+        </Tab>
+        <Tab text="Agregar Habitación">
+            <GridPane>
+                <Label text="ID Habitación" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <TextField fx:id="idHabitacionInputAgregar" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                <Label text="Número de Habitación" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="numeroHabitacionInputAgregar" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Label text="Tipo de Habitación" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <TextField fx:id="tipoHabitacionInputAgregar" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label text="Descripción" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <TextField fx:id="descripcionInputAgregar" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                <Label text="Capacidad" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <TextField fx:id="capacidadInputAgregar" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+                <Label text="Estado" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                <TextField fx:id="estadoInputAgregar" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+                <Button text="Agregar" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            </GridPane>
+        </Tab>
+    </TabPane>
+</AnchorPane>

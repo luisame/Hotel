@@ -1,0 +1,57 @@
+
+  /*
+    Author     : luisa
+-fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-font-family: 'Cambria';
+/* Estilos para las etiquetas de formulario */
+  @font-face {
+    font-family: 'Open Sans';
+   src: url('/Fonts/OpenSans-Regular.ttf');
+    /* Puedes agregar otras variantes de la fuente aquí, como 'OpenSans-Bold.ttf' */
+}
+.form-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+    
+
+/* Estilos para los campos de formulario */
+.form-field {
+    -fx-font-size: 18px;
+    -fx-prompt-text-fill: #999999;
+}
+
+/* Estilos para los botones de acción */
+.action-button {
+    -fx-font-size: 18px;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #4a90e2;
+}
+
+/* Estilos para el fondo del GridPane */
+.grid-pane {
+    -fx-background-color: #E4F9F5;
+}
+
+/* Estilos personalizados para la vista de clientes */
+.clientes-ccs {
+    -fx-padding: 40px;
+}
+
+/* Estilos para el título de la vista */
+titulo {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; /* Cambiar a un tono oscuro, por ejemplo: #333333 */
+    -fx-alignment: center;
+    -fx-padding: 0 0 20px 0;
+}
+
+/* Estilos para el contenedor principal */
+.contenedor-principal {
+    -fx-alignment: center;
+}
+}

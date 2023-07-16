@@ -1,0 +1,28 @@
+
+/* 
+    Created on : 20-may-2023, 10:13:26
+    Author     : luisa
+*/
+.root {
+    -fx-background-color: #f0f0f0;
+}
+
+#tablaHabitaciones {
+    -fx-table-cell-border-color: #d0d0d0;
+    -fx-table-header-border-color: #d0d0d0;
+}
+
+.text-field {
+    -fx-prompt-text-fill: #a0a0a0;
+}
+
+.button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #0056b3;
+}
+

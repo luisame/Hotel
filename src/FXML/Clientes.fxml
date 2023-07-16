@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Vista de la pantalla de Clientes -->
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER.Clientes" stylesheets="@CCS/Clientes.css" styleClass="contenedor-principal" style="-fx-padding: 40px;">
+    <TabPane AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <Tab text="Consultar">
+            <TableView fx:id="tablaClientes">
+                <columns>
+                    <TableColumn fx:id="codigoColumna" text="Código" />
+                    <TableColumn fx:id="nombreColumna" text="Nombre" />
+                    <TableColumn fx:id="apellidosColumna" text="Apellidos" />
+            <!-- Vista de la pantalla de Clientes -->        <TableColumn fx:id="nifColumna" text="NIF" />
+                    <TableColumn fx:id="direccionColumna" text="Dirección" />
+                    <TableColumn fx:id="ciudadColumna" text="Ciudad" />
+                    <TableColumn fx:id="correoColumna" text="Correo electrónico" />
+                    <TableColumn fx:id="telefono1Columna" text="Teléfono 1" />
+                    <TableColumn fx:id="telefono2Columna" text="Teléfono 2" />
+                    <TableColumn fx:id="categoriaColumna" text="Categoría" />
+                </columns>
+            </TableView>
+        </Tab>
+        <Tab text="Modificar">
+            <GridPane>
+                <Label text="Código" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <TextField fx:id="codigoInputModificar" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                <Label text="Nombre" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="nombreInputModificar" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Label text="Apellidos" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <TextField fx:id="apellidosInputModificar" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label text="NIF" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <TextField fx:id="nifInputModificar" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                <Label text="Dirección" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <TextField fx:id="direccionInputModificar" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+                <Label text="Ciudad" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                <TextField fx:id="ciudadInputModificar" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+                <Label text="Correo electrónico" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                <TextField fx:id="correoInputModificar" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+                <Label text="Teléfono 1" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                <TextField fx:id="telefono1InputModificar" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+
+                <Label text="Teléfono 2" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+                <TextField fx:id="telefono2InputModificar" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+
+                <Label text="Categoría" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+                <TextField fx:id="categoriaInputModificar" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+
+                <Button text="Modificar" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                <Button text="Eliminar" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+            </GridPane>
+        </Tab>
+        <Tab text="Agregar Cliente">
+            <GridPane>
+                <Label text="Código" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <TextField fx:id="codigoInputAgregar" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                <Label text="Nombre" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="nombreInputAgregar" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Label text="Apellidos" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <TextField fx:id="apellidosInputAgregar" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label text="NIF" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <TextField fx:id="nifInputAgregar" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                <Label text="Dirección" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <TextField fx:id="direccionInputAgregar" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+                <Label text="Ciudad" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                <TextField fx:id="ciudadInputAgregar" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+                <Label text="Correo electrónico" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                <TextField fx:id="correoInputAgregar" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+                <Label text="Teléfono 1" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                <TextField fx:id="telefono1InputAgregar" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+
+                <Label text="Teléfono 2" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+                <TextField fx:id="telefono2InputAgregar" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+
+                <Label text="Categoría" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+                <TextField fx:id="categoriaInputAgregar" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+
+                <Button text="Agregar" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            </GridPane>
+        </Tab>
+    </TabPane>
+</AnchorPane>

@@ -1,0 +1,43 @@
+#BtnAdministracion:hover,
+#BtnClientes:hover,
+#BtnHabitaciones:hover,
+#BtnReservas:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0, 0, 0); /* Añade una sombra al botón */
+    -fx-background-size: cover;
+    -fx-opacity: 0.9;
+   -fx-background-color: #FFA500; /* Cambia el color de fondo al hacer hover */
+    -fx-text-fill: white; /* Cambia el color del texto al hacer hover */
+}
+
+#BtnAdministracion {
+    -fx-background-image: url("@Imagenes/administracion.png");
+     -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+    -fx-background-radius: 5;
+     -fx-background-color: transparent;
+}
+
+#BtnClientes {
+    -fx-background-image: url("@Imagenes/clientes.png");
+     -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+    -fx-background-radius: 5;
+     -fx-background-color: transparent;
+}
+
+#BtnHabitaciones {
+    -fx-background-image: url("@Imagenes/habitaciones.png");
+     -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+    -fx-background-radius: 5;
+     -fx-background-color: transparent;
+}
+    
+
+#BtnReservas {
+    -fx-background-image: url("@Imagenes/reservas.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+    -fx-background-radius: 5;
+     -fx-background-color: transparent;
+}
